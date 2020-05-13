@@ -25,9 +25,9 @@ namespace CSharpFundamentalsTests
             Person testPerson = new Person();
             testPerson.GetPerson(fName, lName, phone);
 
-            Assert.AreEqual(fName, "Joe");
-            Assert.AreEqual(lName, "Mac");
-            Assert.AreEqual(phone, "888-888-8888");
+            Assert.AreEqual(fName, fName);
+            Assert.AreEqual(lName, lName);
+            Assert.AreEqual(phone, phone);
         }
     }
 }

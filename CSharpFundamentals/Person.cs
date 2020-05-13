@@ -22,7 +22,7 @@ namespace CSharpFundamentals
             lName = lastName;
             phoneNumber = phone;
 
-            Console.WriteLine($"first name: {fName} lastName: {lName} phone number{phoneNumber}");
+            Console.WriteLine($"first name: {fName} lastName: {lName} phone number: {phoneNumber}");
         }
     }
 }
