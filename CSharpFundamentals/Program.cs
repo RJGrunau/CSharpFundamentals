@@ -7,8 +7,8 @@ namespace CSharpFundamentals
         static void Main(string[] args)
         {
             
-            Person bob = new Person();
-            bob.GetPerson("Bob", "Grunau", "503.935.6627");   
+            Person np = new Person("Bob", "Grunau", "111-222-3333");
+            np.GetPerson(np);
         }
     }
 }

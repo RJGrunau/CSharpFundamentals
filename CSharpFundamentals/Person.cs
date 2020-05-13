@@ -3,26 +3,22 @@ namespace CSharpFundamentals
 {
 
     
-    public class Person
+    public class Person 
     {
         string fName;
         string lName;
         string phoneNumber;
 
-        public Person()
-        {
-            fName = ""; 
-            lName = "";
-            phoneNumber = "";
-        }
-
-        public void GetPerson (string firstName, string lastName, string phone)
+        public Person( string firstName, string lastName, string phone)
         {
             fName = firstName;
             lName = lastName;
             phoneNumber = phone;
+        }
 
-            Console.WriteLine($"first name: {fName} lastName: {lName} phone number: {phoneNumber}");
+        public void GetPerson (Person person)
+        {
+            Console.WriteLine($"first name: {person.fName} lastName: {person.lName} phone number: {person.phoneNumber}");
         }
     }
 }
