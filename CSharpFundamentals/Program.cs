@@ -6,7 +6,9 @@ namespace CSharpFundamentals
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
+            Person bob = new Person();
+            bob.GetPerson("Bob", "Grunau", "503.935.6627");   
         }
     }
 }
