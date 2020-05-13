@@ -3,11 +3,15 @@ namespace CSharpFundamentals
 {
 
     
-    public class Person 
+    public class Person : IPerson
     {
-        string fName;
-        string lName;
-        string phoneNumber;
+        public string fName;
+        public string lName;
+        public string phoneNumber;
+
+        public Person()
+        {
+        }
 
         public Person( string firstName, string lastName, string phone)
         {

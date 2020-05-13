@@ -3,6 +3,7 @@ namespace CSharpFundamentals
 {
     public interface IPerson
     {
-        void GetEmpolyee() { }
+        void GetPerson() { }
+        
     }
 }
