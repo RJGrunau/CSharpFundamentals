@@ -4,7 +4,7 @@ namespace CSharpFundamentals
     public class Employee : Person, IPerson
     {
 
-        public int EmplyeeId;
+        public int EmployeeId { get; set; }
         
         public Employee() : base()
         {
@@ -12,27 +12,37 @@ namespace CSharpFundamentals
         }
 
         public Employee(string fname, string lname, string phone) : base(fname, lname, phone) { }
-
-        public void GetWelcomMessge(Person person)
+        
+        public  String GetWelcomeMessge()
         {
             TimeSpan amStart = new TimeSpan(00, 0, 0);
             TimeSpan amEnd = new TimeSpan(11, 59, 59);
             TimeSpan afterNoonEnd = new TimeSpan(17, 0, 0);
             TimeSpan nightStart = new TimeSpan(19, 0, 0);
             TimeSpan now = DateTime.Now.TimeOfDay;
+            String salutation;
+            String message;
             if (now >= amStart && now <= amEnd)
             {
-                Console.WriteLine($"Good morning, {person.fName} {person.lName}");
+                salutation = "Good morning";
+                message = $"{salutation} {this.FirstName} {this.SurName}";
+                return message;
             }else if(now > amEnd && now < afterNoonEnd)
             {
-                Console.WriteLine($"Good afternoon, {person.fName} {person.lName}");
+                salutation = "Good afternoon";
+                message = $"{salutation}, {this.FirstName} {this.SurName}";
+                return message;
             }else if(now > afterNoonEnd && now <= nightStart)
             {
-                Console.WriteLine($"Good evening, {person.fName} {person.lName}");
+                salutation = "Good evening";
+                message = $"{salutation}, {this.FirstName} {this.SurName}";
+                return message;
             }
             else
             {
-                Console.WriteLine($"Good night, {person.fName} {person.lName}");
+                salutation = "Good night";
+                message = $"{salutation}, {this.FirstName} {this.SurName}";
+                return message;
             }
         }
     }

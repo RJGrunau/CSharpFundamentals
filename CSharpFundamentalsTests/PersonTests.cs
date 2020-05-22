@@ -23,7 +23,7 @@ namespace CSharpFundamentalsTests
             string lName = "Mac";
             string phone = "888-888-8888";
             Person testPerson = new Person(fName, lName, phone);
-            testPerson.GetPerson(testPerson);
+            testPerson.GetPerson();
 
             Assert.AreEqual(fName, fName);
             Assert.AreEqual(lName, lName);
