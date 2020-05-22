@@ -27,7 +27,11 @@ namespace CSharpFundamentals
             get { return this.FirstName; }
             private set { if (!String.IsNullOrWhiteSpace(value)){ FirstName = value; } }
         }
-        public string SurName {get; set;}
+        public string SurName
+        {
+            get { return this.SurName; }
+            set { if (!String.IsNullOrWhiteSpace(value)) { SurName = value; } }
+        }
         public string PhoneNumber {get; set;}
     }
 }

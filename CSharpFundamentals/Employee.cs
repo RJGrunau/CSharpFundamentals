@@ -11,7 +11,7 @@ namespace CSharpFundamentals
             
         }
 
-        public Employee(string fname, string lname, string phone) : base(fname, lname, phone) { }
+        public Employee(string firstName, string lastName, string phone) : base(firstName, lastName, phone) { }
         
         public  String GetWelcomeMessge()
         {

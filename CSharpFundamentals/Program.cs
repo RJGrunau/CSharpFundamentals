@@ -8,7 +8,8 @@ namespace CSharpFundamentals
         {
             
             Employee emp = new Employee("John", "Smith", "222-333-3333");
-            emp.GetWelcomMessge(emp);
+            String welcomeMessage = emp.GetWelcomeMessge();
+            Console.WriteLine(welcomeMessage);
         }
     }
 }
