@@ -10,10 +10,15 @@ namespace CSharpFundamentals
         {
             
         }
-
+        public override String FirstName { get; set; }
+        public override String SurName { get; set; }
         public Employee(string firstName, string lastName, string phone) : base(firstName, lastName, phone) { }
-        
-        public  String GetWelcomeMessge()
+
+        public String GetDetails(string firstName, string lastName, string phone)
+        {
+           return base.GetDetails();
+        }
+        public override String GetTimeOfDayGreeting()
         {
             TimeSpan amStart = new TimeSpan(00, 0, 0);
             TimeSpan amEnd = new TimeSpan(11, 59, 59);
